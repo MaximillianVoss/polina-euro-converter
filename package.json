@@ -1,0 +1,38 @@
+{
+  "name": "fullstack-homework-euro-converter",
+  "version": "1.0.0",
+  "main": "index.ts",
+  "scripts": {
+    "start": "expo start",
+    "android": "expo start --android",
+    "ios": "expo start --ios",
+    "web": "expo start --web",
+    "test": "jest --watchAll=false",
+    "typecheck": "tsc --noEmit",
+    "export:web": "expo export --platform web"
+  },
+  "dependencies": {
+    "expo": "~54.0.36",
+    "expo-status-bar": "~3.0.9",
+    "react": "19.1.0",
+    "react-native": "0.81.5",
+    "@react-native-picker/picker": "2.11.1",
+    "react-dom": "19.1.0",
+    "react-native-web": "^0.21.0"
+  },
+  "devDependencies": {
+    "@testing-library/react-native": "13.3.3",
+    "jest": "29.7.0",
+    "jest-expo": "~54.0.18",
+    "react-test-renderer": "19.1.0",
+    "@types/jest": "29.5.14",
+    "@types/node": "22.15.3",
+    "@types/react": "~19.1.10",
+    "typescript": "~5.9.2"
+  },
+  "jest": {
+    "preset": "jest-expo",
+    "setupFilesAfterEnv": ["<rootDir>/jest.setup.ts"]
+  },
+  "private": true
+}
